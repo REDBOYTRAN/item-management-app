@@ -49,10 +49,12 @@ Make sure you have the following installed on your machine:
    npm install
 
 4. **Starting the Fake API Server:**
+
   Before running the Angular application, you need to start the JSON Server to simulate a fake backend. Open a new terminal and run:
 
    ```bash
    npm run server
+   ```
   This will start the fake API server at http://localhost:3000/.
 
 5. **Running the Angular Application:**
@@ -60,5 +62,5 @@ Make sure you have the following installed on your machine:
 
   ```bash
    ng serve
-```
+  ```
   Open your browser and go to http://localhost:4200/ to access the application.
