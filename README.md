@@ -1,26 +1,24 @@
 # Item Management App
 
-Item Management App is a simple Angular application for managing items. It allows users to view a list of items, add new items, edit existing ones and soft delete them. It also allows users to sort and search for items.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
 - [Features](#features)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Starting the Fake API Server](#starting-the-fake-api-server)
-  - [Running the Angular Application](#running-the-angular-application)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 
 ## Introduction
 
-The Item Management App is built with Angular and provides a user-friendly interface for managing items. Users can view a list of items, add new items, and edit existing ones.
+The Item Management App is built with Angular and JSON Server to simulate a fake backend for managing items. Users can view a list of items, add new items, and edit existing ones.
 
 ## Features
 
 - View a list of items with details such as name, type, category, and price.
 - Add new items to the list.
-- Edit existing items, including updating their details and marking them as active or inactive.
+- Edit existing items, including updating their details and marking them as active or inactive (Soft delete).
+- Sort by the head of item table.
+- Search for items.
 
 ## Getting Started
 
