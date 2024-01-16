@@ -1,27 +1,68 @@
-# ItemManagementApp
+# Item Management App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+## Table of Contents
 
-## Development server
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Introduction
 
-## Code scaffolding
+The Item Management App is built with Angular and JSON Server to simulate a fake backend for managing items. Users can view a list of items, add new items, and edit existing ones.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
 
-## Build
+- View a list of items with details such as name, type, category, and price.
+- Add new items to the list.
+- Edit existing items, including updating their details and marking them as active or inactive (Soft delete).
+- Sort by the head of item table.
+- Search for items.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Getting Started
 
-## Running unit tests
+Follow the instructions below to get the Item Management App up and running on your local machine.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Prerequisites
 
-## Running end-to-end tests
+Make sure you have the following installed on your machine:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- [Node.js](https://nodejs.org/) 
+- [Angular CLI](https://cli.angular.io/)
 
-## Further help
+### Installation
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/REDBOYTRAN/item-management-app.git
+   
+2. **Navigate to the project directory:**
+
+   ```bash
+   cd item-management-app
+
+3. **Install dependencies:**
+   
+   ```bash
+   npm install
+
+4. **Starting the Fake API Server:**
+
+  Before running the Angular application, you need to start the JSON Server to simulate a fake backend. Open a new terminal and run:
+
+   ```bash
+   npm run server
+   ```
+  This will start the fake API server at http://localhost:3000/.
+  
+  **Please note that using the latest Node version for supporting JSON Server (For me, it is v21.5.0).**
+
+5. **Running the Angular Application:**
+  In a separate terminal, run the following command to start the Angular development server:
+
+  ```bash
+   ng serve
+  ```
+  Open your browser and go to http://localhost:4200/ to access the application.
