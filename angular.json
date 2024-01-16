@@ -72,6 +72,10 @@
             },
             "development": {
               "browserTarget": "item-management-app:build:development"
+            },
+            "mock": {
+              "buildTarget": "json-server-demo:build:development",
+              "proxyConfig": "./mocks/proxy.config.json"
             }
           },
           "defaultConfiguration": "development"

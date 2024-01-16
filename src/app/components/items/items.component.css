@@ -1,0 +1,8 @@
+th,
+td {
+    cursor: pointer;
+}
+
+.sort-enable {
+    color: #0f6ec7;
+}

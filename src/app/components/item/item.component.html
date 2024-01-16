@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="container-fluid">
+        <form (ngSubmit)="onSubmit()">
+            <div class="card card-default mb-3" id="pSLTDetails">
+                <h3 *ngIf="item.id !== ''" class="card-header">Edit Item</h3>
+                <h3 *ngIf="item.id === ''" class="card-header">Add New Item</h3>
+                <div class="card-body">
+                    <div class="row pb-3">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3">
+                                        <label for="Name">Name</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="input-group">
+                                            <input id="name" name="name" class="form-control" [(ngModel)]="item.name"
+                                                placeholder="Name" maxStringLength="254" #nameControl="ngModel"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-2">
+                                        <label for="Name">Type</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="input-group">
+                                            <input id="type" name="type" class="form-control" [(ngModel)]="item.type"
+                                                placeholder="Type" maxStringLength="254" #nameControl="ngModel"
+                                                required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row pb-3">
+                        <div class="row">
+                            <div class="col-sm-5">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-3">
+                                        <label for="Name">Category</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="input-group">
+                                            <input id="category" name="category" class="form-control"
+                                                [(ngModel)]="item.category" placeholder="Category" maxStringLength="254"
+                                                #nameControl="ngModel" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="row">
+                                    <div class="col-sm-12 col-md-2">
+                                        <label for="Name">Price</label>
+                                    </div>
+                                    <div class="col-sm-12 col-md-7">
+                                        <div class="input-group">
+                                            <input id="price" name="price" type="number" class="form-control"
+                                                [(ngModel)]="item.price" placeholder="Price" maxStringLength="254"
+                                                #nameControl="ngModel" required />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="row">
+                                    <label class="col-sm-12 col-md-6 form-check-label" for="isActiveCheckbox"
+                                        (click)="item.isActive = !item.isActive">Is Active</label>
+                                    <input class="form-check-input mt-0" type="checkbox" id="isActiveCheckbox"
+                                        [(ngModel)]="item.isActive" name="isActive" style="font-size: 1.5em" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container d-flex justify-content-between">
+                <button class="btn btn-secondary float-left" type="button" (click)="goBack()"><i
+                        class="fa fa-chevron-left"></i>&nbsp;&nbsp;Back</button>
+                <button type="submit" class="btn btn-primary float-right"><i
+                        class="fa fa-solid fa-floppy-disk"></i>&nbsp;&nbsp;Save</button>
+            </div>
+        </form>
+    </div>
+</div>
