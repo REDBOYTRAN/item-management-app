@@ -28,7 +28,7 @@ Follow the instructions below to get the Item Management App up and running on y
 
 Make sure you have the following installed on your machine:
 
-- [Node.js](https://nodejs.org/)
+- [Node.js](https://nodejs.org/) 
 - [Angular CLI](https://cli.angular.io/)
 
 ### Installation
@@ -56,6 +56,7 @@ Make sure you have the following installed on your machine:
    npm run server
    ```
   This will start the fake API server at http://localhost:3000/.
+  *Please note that using the latest Node version for supporting JSON Server (For me, it is v21.5.0).*
 
 5. **Running the Angular Application:**
   In a separate terminal, run the following command to start the Angular development server:
