@@ -11,9 +11,6 @@ Item Management App is a simple Angular application for managing items. It allow
   - [Installation](#installation)
   - [Starting the Fake API Server](#starting-the-fake-api-server)
   - [Running the Angular Application](#running-the-angular-application)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
